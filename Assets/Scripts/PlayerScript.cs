@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector3(speed, rb.linearVelocity.y, 0);
+        rb.linearVelocity = new Vector3(0, rb.linearVelocity.y, speed);
     }
 
     void Update()
@@ -38,7 +38,7 @@ public class PlayerScript : MonoBehaviour
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
-    private void OnDesable()
+    private void OnDisable()
     {
         jump.action.started -= JUMP;
     }
