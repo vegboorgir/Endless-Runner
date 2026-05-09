@@ -8,7 +8,6 @@ public class GroundScript : MonoBehaviour
 
     private Transform[] grounds;
     private int lastGroundIndex = 0;
-    
     void Start()
     {
         grounds = new Transform[transform.childCount];
@@ -21,7 +20,7 @@ public class GroundScript : MonoBehaviour
     void Update()
     {
         float distanceToEnd = grounds[lastGroundIndex].position.z + groundLength - player.position.z;
-        
+
         // Regenerate when player is within regenThreshold of the tile's end
         if (distanceToEnd <= regenThreshold)
         {

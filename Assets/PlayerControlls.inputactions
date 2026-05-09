@@ -17,12 +17,12 @@
                 },
                 {
                     "name": "Move RL",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "461d2122-79fc-4790-90fd-e1f5ea00c9b8",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -38,17 +38,6 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "89c166f3-ed1f-4b6a-a50a-03fd6fefb820",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move RL",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "2D Vector",
                     "id": "74eeee40-a640-44f8-b8b1-fba7e5dd9e07",
                     "path": "2DVector",
@@ -60,23 +49,12 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "92253524-262a-4437-8fd9-81079681048b",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move RL",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "down",
                     "id": "70f88e26-4a6e-4c8a-bf14-2014cc4b3855",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard",
                     "action": "Move RL",
                     "isComposite": false,
                     "isPartOfComposite": true
